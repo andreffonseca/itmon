@@ -1,1 +1,41 @@
-composer.phar
+# Created by https://www.gitignore.io/api/laravel,netbeans,composer
+
+### Composer ###
+src/composer.phar
+src/vendor/
+
+# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+### Laravel ###
+src/vendor/
+src/node_modules/
+src/npm-debug.log
+
+# Laravel 4 specific
+src/bootstrap/compiled.php
+src/app/storage/
+
+# Laravel 5 & Lumen specific
+src/public/storage
+src/public/hot
+src/storage/*.key
+.src/env.*.php
+src/.env.php
+src/.env
+src/Homestead.yaml
+src/Homestead.json
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+src/.rocketeer/
+
+### NetBeans ###
+src/nbproject/private/
+src/build/
+src/nbbuild/
+src/dist/
+src/nbdist/
+src/.nb-gradle/
+
+# End of https://www.gitignore.io/api/laravel,netbeans,composer
