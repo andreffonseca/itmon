@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class DatabaseServiceProvider extends ServiceProvider
+class ExceptionServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -23,6 +23,6 @@ class DatabaseServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        require_once(app_path().'/Helpers/DatabaseProvider.php');
+        require_once(app_path().'/Helpers/ExceptionProvider.php');
     }
 }
