@@ -34,10 +34,16 @@ class ApiController extends Controller {
     
     private function threatPostCall(Request $request) {
         
-        $controller = array(
-            'status' => ApiCallModel::REQUEST_OK,
-            'message' => ''
-        );
+        // Just save to database
+        $req = new \App\Libs\Models\ApiRequestModel();
+        
+        $reqString = '';
+        foreach ($request->input() as $key => $value) {
+            $reqString .= '|s|' . $key . '=' . $value;
+        }
+        $req->request = $reqString;
+        
+        $req->save();
         
         
         
