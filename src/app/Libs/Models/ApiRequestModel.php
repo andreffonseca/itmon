@@ -10,5 +10,7 @@ class ApiRequestModel extends Model
     
     public function getApiCallConfig() {
         
+        $apiConfig = db()->where('status',1)
+        
     }
 }
