@@ -14,12 +14,12 @@ class CreateConfigApiTable extends Migration
     public function up()
     {
         Schema::create('api_config', function (Blueprint $table) {
-            $table->increments('pk_id');
+            $table->increments('config_id');
             $table->string('table',30);
             $table->string('field',20);
             $table->string('descr',100);
             $table->string('value',50);
-            $table->tinyint('status')->default(1);
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateConfigApiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('api_gen_config');
+        Schema::dropIfExists('api_config');
     }
 }
