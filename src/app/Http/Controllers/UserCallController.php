@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
 
@@ -18,7 +17,7 @@ use Illuminate\Http\Request;
  * @version 1.0.a
  * @since 1.0.a
  */
-class UserCallController {
+class UserCallController extends Controller {
     
     
     /**
