@@ -1,17 +1,19 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-namespace App\Http;
+namespace App\Http\Controller;
 
 /**
- * Description of UserCallController
+ * Class for Handling Requests About Users
  *
- * @author IT170302
+ * The propose of this class is to handle all endpoint
+ * request to the application
+ * 
+ * @package Monitor
+ * @category Controllers    
+ * @author André Fonseca <andre.fg.fonseca@gmail.com>
+ * @version 1.0.a
+ * @since 1.0.a
  */
 use Illuminate\Http\Request;
 
