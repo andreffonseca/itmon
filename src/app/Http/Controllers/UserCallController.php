@@ -3,6 +3,9 @@
 
 namespace App\Http\Controller;
 
+
+use Illuminate\Http\Request;
+
 /**
  * Class for Handling Requests About Users
  *
@@ -15,8 +18,6 @@ namespace App\Http\Controller;
  * @version 1.0.a
  * @since 1.0.a
  */
-use Illuminate\Http\Request;
-
 class UserCallController {
     
     
