@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::any('/api','ApiController@router');
+Route::any('/api','CollectorCallController@collector');
